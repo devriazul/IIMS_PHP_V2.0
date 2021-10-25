@@ -1,10 +1,15 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
+include('../config.php'); 
 require_once('class/productfilter.class.php');
-$pft=new ProductFilter();
-include("config.php"); 
+$pft=new Productfilter();
 if($myDb->connectDefaultServer())
+
+// require_once('dbClass.php');
+// require_once('class/productfilter.class.php');
+// $pft=new ProductFilter();
+// include("config.php"); 
+// if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
   $chka="SELECT*FROM  tbl_accdtl WHERE flname='requisition_list.php' AND userid='$_SESSION[userid]'";
