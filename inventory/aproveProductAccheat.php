@@ -1,8 +1,6 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
-require_once('class/productfilter.class.php');
-include("config.php"); 
+if($myDb->connectDefaultServer())
 //$pft=new ProductFilter();
 if($myDb->connectDefaultServer())
 { 

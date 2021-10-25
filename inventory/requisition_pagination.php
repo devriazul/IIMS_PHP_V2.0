@@ -32,7 +32,7 @@ if($myDb->connectDefaultServer())
 		   INNER JOIN tbl_product p
 		   ON p.id=c.pid
 		   order by c.id desc LIMIT $start, $per_page";
-	 $sdep=$myDb->dump_requisition($sdq,'edit_requisition.php','del_requisition.php',$car['upd'],$car['delt'],'add_approve.php','add_purchase.php');
+	 //$sdep=$myDb->dump_requisition($sdq,'edit_requisition.php','del_requisition.php',$car['upd'],$car['delt'],'add_approve.php','add_purchase.php');
 ?>
 
 
