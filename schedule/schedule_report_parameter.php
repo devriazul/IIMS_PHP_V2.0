@@ -1,8 +1,8 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
-include("config.php"); 
+require_once('../config.php');
 if($myDb->connectDefaultServer())
+
 { 
   if($_SESSION['userid']){
   $chka="SELECT*FROM  tbl_accdtl WHERE flname='add_schedule_map.php' AND userid='$_SESSION[userid]'";
